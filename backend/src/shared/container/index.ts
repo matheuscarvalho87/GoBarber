@@ -1,6 +1,8 @@
 // esse modulo evita que a gente tenha que passar como parametro um repositorio no constructor
 import { container } from 'tsyringe';
 
+import '@modules/users/providers';
+
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 
 import AppointmentsRepository from '@modules/appointments/infra/typeorm/repositories/AppointmentsRepository';
